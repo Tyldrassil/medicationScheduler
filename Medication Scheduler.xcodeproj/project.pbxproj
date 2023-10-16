@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		7DBE4B4A2ADD33C200940D9A /* Medication_SchedulerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE4B492ADD33C200940D9A /* Medication_SchedulerApp.swift */; };
-		7DBE4B4C2ADD33C200940D9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE4B4B2ADD33C200940D9A /* ContentView.swift */; };
-		7DBE4B4E2ADD33C200940D9A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE4B4D2ADD33C200940D9A /* Item.swift */; };
 		7DBE4B502ADD33C700940D9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DBE4B4F2ADD33C700940D9A /* Assets.xcassets */; };
 		7DBE4B532ADD33C700940D9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DBE4B522ADD33C700940D9A /* Preview Assets.xcassets */; };
 		7DBE4B5D2ADD33C700940D9A /* Medication_SchedulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE4B5C2ADD33C700940D9A /* Medication_SchedulerTests.swift */; };
 		7DBE4B672ADD33C700940D9A /* Medication_SchedulerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE4B662ADD33C700940D9A /* Medication_SchedulerUITests.swift */; };
 		7DBE4B692ADD33C700940D9A /* Medication_SchedulerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE4B682ADD33C700940D9A /* Medication_SchedulerUITestsLaunchTests.swift */; };
+		7DBE4B782ADD3EC700940D9A /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE4B772ADD3EC700940D9A /* Medication.swift */; };
+		7DBE4B7C2ADD400A00940D9A /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE4B7B2ADD400A00940D9A /* Schedule.swift */; };
+		7DBE4B7E2ADD412C00940D9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE4B7D2ADD412C00940D9A /* ContentView.swift */; };
+		7DBE4B812ADD4E1200940D9A /* NavigationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE4B802ADD4E1200940D9A /* NavigationListView.swift */; };
+		7DBE4B832ADD4EED00940D9A /* pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE4B822ADD4EED00940D9A /* pages.swift */; };
+		7DBE4B852ADD4FB900940D9A /* PageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE4B842ADD4FB900940D9A /* PageRowView.swift */; };
+		7DBE4B882ADD51EE00940D9A /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE4B872ADD51EE00940D9A /* ScheduleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +42,6 @@
 /* Begin PBXFileReference section */
 		7DBE4B462ADD33C200940D9A /* Medication Scheduler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Medication Scheduler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DBE4B492ADD33C200940D9A /* Medication_SchedulerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication_SchedulerApp.swift; sourceTree = "<group>"; };
-		7DBE4B4B2ADD33C200940D9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7DBE4B4D2ADD33C200940D9A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		7DBE4B4F2ADD33C700940D9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DBE4B522ADD33C700940D9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7DBE4B582ADD33C700940D9A /* Medication SchedulerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Medication SchedulerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +49,13 @@
 		7DBE4B622ADD33C700940D9A /* Medication SchedulerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Medication SchedulerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DBE4B662ADD33C700940D9A /* Medication_SchedulerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication_SchedulerUITests.swift; sourceTree = "<group>"; };
 		7DBE4B682ADD33C700940D9A /* Medication_SchedulerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication_SchedulerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7DBE4B772ADD3EC700940D9A /* Medication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
+		7DBE4B7B2ADD400A00940D9A /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		7DBE4B7D2ADD412C00940D9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7DBE4B802ADD4E1200940D9A /* NavigationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationListView.swift; sourceTree = "<group>"; };
+		7DBE4B822ADD4EED00940D9A /* pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pages.swift; sourceTree = "<group>"; };
+		7DBE4B842ADD4FB900940D9A /* PageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageRowView.swift; sourceTree = "<group>"; };
+		7DBE4B872ADD51EE00940D9A /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +106,9 @@
 		7DBE4B482ADD33C200940D9A /* Medication Scheduler */ = {
 			isa = PBXGroup;
 			children = (
+				7DBE4B762ADD3E6D00940D9A /* Views */,
+				7DBE4B752ADD3E5D00940D9A /* Data */,
 				7DBE4B492ADD33C200940D9A /* Medication_SchedulerApp.swift */,
-				7DBE4B4B2ADD33C200940D9A /* ContentView.swift */,
-				7DBE4B4D2ADD33C200940D9A /* Item.swift */,
 				7DBE4B4F2ADD33C700940D9A /* Assets.xcassets */,
 				7DBE4B512ADD33C700940D9A /* Preview Content */,
 			);
@@ -128,6 +138,43 @@
 				7DBE4B682ADD33C700940D9A /* Medication_SchedulerUITestsLaunchTests.swift */,
 			);
 			path = "Medication SchedulerUITests";
+			sourceTree = "<group>";
+		};
+		7DBE4B752ADD3E5D00940D9A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7DBE4B772ADD3EC700940D9A /* Medication.swift */,
+				7DBE4B7B2ADD400A00940D9A /* Schedule.swift */,
+				7DBE4B822ADD4EED00940D9A /* pages.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7DBE4B762ADD3E6D00940D9A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7DBE4B862ADD51DF00940D9A /* Schedule */,
+				7DBE4B7F2ADD4DBA00940D9A /* Navigation */,
+				7DBE4B7D2ADD412C00940D9A /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7DBE4B7F2ADD4DBA00940D9A /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				7DBE4B802ADD4E1200940D9A /* NavigationListView.swift */,
+				7DBE4B842ADD4FB900940D9A /* PageRowView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		7DBE4B862ADD51DF00940D9A /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				7DBE4B872ADD51EE00940D9A /* ScheduleView.swift */,
+			);
+			path = Schedule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,9 +307,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DBE4B4C2ADD33C200940D9A /* ContentView.swift in Sources */,
-				7DBE4B4E2ADD33C200940D9A /* Item.swift in Sources */,
+				7DBE4B832ADD4EED00940D9A /* pages.swift in Sources */,
+				7DBE4B782ADD3EC700940D9A /* Medication.swift in Sources */,
+				7DBE4B7E2ADD412C00940D9A /* ContentView.swift in Sources */,
+				7DBE4B7C2ADD400A00940D9A /* Schedule.swift in Sources */,
+				7DBE4B852ADD4FB900940D9A /* PageRowView.swift in Sources */,
 				7DBE4B4A2ADD33C200940D9A /* Medication_SchedulerApp.swift in Sources */,
+				7DBE4B882ADD51EE00940D9A /* ScheduleView.swift in Sources */,
+				7DBE4B812ADD4E1200940D9A /* NavigationListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
