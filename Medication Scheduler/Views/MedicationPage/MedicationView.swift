@@ -1,5 +1,5 @@
 //
-//  Schedule.swift
+//  MedicationView.swift
 //  Medication Scheduler
 //
 //  Created by Thomas Ditman on 16/10/2023.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct ScheduleView: View {
+struct MedicationView: View {
     var body: some View {
-        Text("Schedule")
+        Text("Medications")
     }
 }
 
 #Preview {
-    ScheduleView()
+    MedicationView()
 }

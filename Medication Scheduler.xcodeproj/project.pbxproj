@@ -20,6 +20,8 @@
 		7DBE4B832ADD4EED00940D9A /* pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE4B822ADD4EED00940D9A /* pages.swift */; };
 		7DBE4B852ADD4FB900940D9A /* PageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE4B842ADD4FB900940D9A /* PageRowView.swift */; };
 		7DBE4B882ADD51EE00940D9A /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE4B872ADD51EE00940D9A /* ScheduleView.swift */; };
+		7DBE4B8B2ADD53B900940D9A /* MedicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE4B8A2ADD53B900940D9A /* MedicationView.swift */; };
+		7DBE4B8E2ADD54BC00940D9A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE4B8D2ADD54BC00940D9A /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		7DBE4B822ADD4EED00940D9A /* pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pages.swift; sourceTree = "<group>"; };
 		7DBE4B842ADD4FB900940D9A /* PageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageRowView.swift; sourceTree = "<group>"; };
 		7DBE4B872ADD51EE00940D9A /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		7DBE4B8A2ADD53B900940D9A /* MedicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationView.swift; sourceTree = "<group>"; };
+		7DBE4B8D2ADD54BC00940D9A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,8 @@
 		7DBE4B762ADD3E6D00940D9A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7DBE4B8C2ADD54B000940D9A /* SharedViews */,
+				7DBE4B892ADD53A800940D9A /* MedicationPage */,
 				7DBE4B862ADD51DF00940D9A /* Schedule */,
 				7DBE4B7F2ADD4DBA00940D9A /* Navigation */,
 				7DBE4B7D2ADD412C00940D9A /* ContentView.swift */,
@@ -175,6 +181,22 @@
 				7DBE4B872ADD51EE00940D9A /* ScheduleView.swift */,
 			);
 			path = Schedule;
+			sourceTree = "<group>";
+		};
+		7DBE4B892ADD53A800940D9A /* MedicationPage */ = {
+			isa = PBXGroup;
+			children = (
+				7DBE4B8A2ADD53B900940D9A /* MedicationView.swift */,
+			);
+			path = MedicationPage;
+			sourceTree = "<group>";
+		};
+		7DBE4B8C2ADD54B000940D9A /* SharedViews */ = {
+			isa = PBXGroup;
+			children = (
+				7DBE4B8D2ADD54BC00940D9A /* CardView.swift */,
+			);
+			path = SharedViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,9 +333,11 @@
 				7DBE4B782ADD3EC700940D9A /* Medication.swift in Sources */,
 				7DBE4B7E2ADD412C00940D9A /* ContentView.swift in Sources */,
 				7DBE4B7C2ADD400A00940D9A /* Schedule.swift in Sources */,
+				7DBE4B8E2ADD54BC00940D9A /* CardView.swift in Sources */,
 				7DBE4B852ADD4FB900940D9A /* PageRowView.swift in Sources */,
 				7DBE4B4A2ADD33C200940D9A /* Medication_SchedulerApp.swift in Sources */,
 				7DBE4B882ADD51EE00940D9A /* ScheduleView.swift in Sources */,
+				7DBE4B8B2ADD53B900940D9A /* MedicationView.swift in Sources */,
 				7DBE4B812ADD4E1200940D9A /* NavigationListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
