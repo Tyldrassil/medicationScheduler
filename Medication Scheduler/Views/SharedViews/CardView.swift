@@ -12,20 +12,23 @@ struct CardView: View {
     let page: Page
     
     var body: some View {
-        VStack(alignment: .leading) {
-            Text(page.name)
-                .font(.headline)
-                .padding(.top, 20)
-            
-            Spacer()
-            Text(page.desc)
-                .padding(.bottom, 20)
+        RoundedRectangle(
+            cornerRadius: 25
+        )
+        .fill(.white)
+        .stroke(.black)
+        .overlay {
+            VStack {
+                Text(page.name)
+                Spacer() //Maybe add an image in between here aswell?
+                Text(page.desc )
+            }
+            .padding(.vertical, 40)
         }
-        .padding(.all, 20)
     }
 }
 
-#Preview("CardView Preview", traits: .fixedLayout(width: 400, height: 60)) {
+#Preview("CardView Preview", traits: .fixedLayout(width: 400, height: 600)) {
     
     CardView(page: Page(id: 0, name: "test name", desc: "test desc"))
 }

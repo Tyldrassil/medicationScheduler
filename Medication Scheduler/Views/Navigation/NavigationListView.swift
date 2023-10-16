@@ -9,51 +9,41 @@ import SwiftUI
 
 struct NavigationListView: View {
     
-    var pages = [Page(id: 0, name: "Item 1",desc: "desc 1"), Page(id: 1, name: "Item 2",desc: "desc 2")]
+    var pages = [
+        Page(
+            id: 0,
+            name: "Medications",
+            desc: "This is a rather long descriptions for medications, intended to test the limit and use of the Spacer() in the grid"),
+        Page(
+            id: 1,
+            name: "Schedule",
+            desc: "This is a rather long descriptions for Schedule, intended to test the limit and use of the Spacer() in the grid")
+    ]
     
     var body: some View {
         NavigationStack {
-            Grid{
+            Grid(alignment: .leadingFirstTextBaseline){
                 GridRow {
                     NavigationLink(
                         destination: MedicationView(),
                         label: {
-                            RoundedRectangle(
-                                cornerRadius: 25
-                            )
-                            .fill(.orange)
-                            .overlay {
-                                Text("Medications")
-                            }
+                            CardView(page: pages[0])
                         }
                     )
                 }
+                .padding(.all, 40)
                 GridRow {
                     NavigationLink(
                         destination: ScheduleView(),
                         label: {
-                            RoundedRectangle(
-                                cornerRadius: 25
-                            )
-                            .fill(.purple)
-                            .overlay {
-                                Text("Schedule")
-                            }
+                            CardView(page: pages[1])
                         }
                     )
                 }
+                .padding(.all, 40)
             }
-            
-            
-            /*List(pages) {page in
-                NavigationLink {
-                    ScheduleView()
-                } label: {
-                    PageRow(page: page)
-                }
-            }*/
         }
-        Text("TODO")
+        
     }
 }
 
