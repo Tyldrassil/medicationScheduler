@@ -11,8 +11,10 @@ on:
 
 jobs:
   build:
-
     runs-on: macos-latest
+    defaults:
+      run:
+        working-directory: ./medicationScheduler
 
     steps:
     - uses: actions/checkout@v3
