@@ -18,7 +18,7 @@ import SwiftData
  */
 
 @Model
-class Locations {
+class Schedule {
     
     @Attribute(.unique) var id: UUID = UUID()
     

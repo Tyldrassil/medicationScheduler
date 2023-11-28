@@ -20,9 +20,11 @@ struct NavigationListView: View {
             desc: "This is a rather long descriptions for Schedule, intended to test the limit and use of the Spacer() in the grid")
     ]
     
+    //Main view should display boxes that act as navigation to the rest of the app
     var body: some View {
         NavigationStack {
             Grid(alignment: .leadingFirstTextBaseline){
+                //Leads to medications page
                 GridRow {
                     NavigationLink(
                         destination: MedicationView(),
@@ -32,6 +34,7 @@ struct NavigationListView: View {
                     )
                 }
                 .padding(.all, 40)
+                //Leads to Schedule
                 GridRow {
                     NavigationLink(
                         destination: ScheduleView(),
