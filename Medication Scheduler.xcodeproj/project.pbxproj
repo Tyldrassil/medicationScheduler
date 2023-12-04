@@ -24,6 +24,9 @@
 		7DBE4B8E2ADD54BC00940D9A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE4B8D2ADD54BC00940D9A /* CardView.swift */; };
 		7DBE4B902ADE812A00940D9A /* IndividualMedicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE4B8F2ADE812A00940D9A /* IndividualMedicationView.swift */; };
 		7DBE4B922ADFEA6A00940D9A /* MedicationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE4B912ADFEA6A00940D9A /* MedicationDetailView.swift */; };
+		7DDD67A72B175E6800AAC7CB /* nearbyInteractionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDD67A62B175E6800AAC7CB /* nearbyInteractionManager.swift */; };
+		7DDD67A92B1763D600AAC7CB /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDD67A82B1763D600AAC7CB /* Helper.swift */; };
+		7DDD67AC2B1DEE2800AAC7CB /* BluetoothLECentral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDD67AB2B1DEE2800AAC7CB /* BluetoothLECentral.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,10 @@
 		7DBE4B8D2ADD54BC00940D9A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		7DBE4B8F2ADE812A00940D9A /* IndividualMedicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualMedicationView.swift; sourceTree = "<group>"; };
 		7DBE4B912ADFEA6A00940D9A /* MedicationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationDetailView.swift; sourceTree = "<group>"; };
+		7DDD67A62B175E6800AAC7CB /* nearbyInteractionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nearbyInteractionManager.swift; sourceTree = "<group>"; };
+		7DDD67A82B1763D600AAC7CB /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		7DDD67AB2B1DEE2800AAC7CB /* BluetoothLECentral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothLECentral.swift; sourceTree = "<group>"; };
+		7DDD67AD2B1DFB3500AAC7CB /* Medication-Scheduler-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Medication-Scheduler-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +121,8 @@
 		7DBE4B482ADD33C200940D9A /* Medication Scheduler */ = {
 			isa = PBXGroup;
 			children = (
+				7DDD67AD2B1DFB3500AAC7CB /* Medication-Scheduler-Info.plist */,
+				7DDD67A52B175E1F00AAC7CB /* UWB */,
 				7DBE4B762ADD3E6D00940D9A /* Views */,
 				7DBE4B752ADD3E5D00940D9A /* Data */,
 				7DBE4B492ADD33C200940D9A /* Medication_SchedulerApp.swift */,
@@ -203,6 +212,24 @@
 				7DBE4B8D2ADD54BC00940D9A /* CardView.swift */,
 			);
 			path = SharedViews;
+			sourceTree = "<group>";
+		};
+		7DDD67A52B175E1F00AAC7CB /* UWB */ = {
+			isa = PBXGroup;
+			children = (
+				7DDD67AA2B1DEE1000AAC7CB /* BluetoothSupport */,
+				7DDD67A62B175E6800AAC7CB /* nearbyInteractionManager.swift */,
+				7DDD67A82B1763D600AAC7CB /* Helper.swift */,
+			);
+			path = UWB;
+			sourceTree = "<group>";
+		};
+		7DDD67AA2B1DEE1000AAC7CB /* BluetoothSupport */ = {
+			isa = PBXGroup;
+			children = (
+				7DDD67AB2B1DEE2800AAC7CB /* BluetoothLECentral.swift */,
+			);
+			path = BluetoothSupport;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,16 +363,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DBE4B902ADE812A00940D9A /* IndividualMedicationView.swift in Sources */,
+				7DDD67A92B1763D600AAC7CB /* Helper.swift in Sources */,
 				7DBE4B832ADD4EED00940D9A /* pages.swift in Sources */,
 				7DBE4B782ADD3EC700940D9A /* Medication.swift in Sources */,
 				7DBE4B7E2ADD412C00940D9A /* ContentView.swift in Sources */,
 				7DBE4B7C2ADD400A00940D9A /* Schedule.swift in Sources */,
+				7DDD67AC2B1DEE2800AAC7CB /* BluetoothLECentral.swift in Sources */,
 				7DBE4B8E2ADD54BC00940D9A /* CardView.swift in Sources */,
 				7DBE4B852ADD4FB900940D9A /* PageRowView.swift in Sources */,
 				7DBE4B4A2ADD33C200940D9A /* Medication_SchedulerApp.swift in Sources */,
 				7DBE4B922ADFEA6A00940D9A /* MedicationDetailView.swift in Sources */,
 				7DBE4B882ADD51EE00940D9A /* ScheduleView.swift in Sources */,
 				7DBE4B8B2ADD53B900940D9A /* MedicationView.swift in Sources */,
+				7DDD67A72B175E6800AAC7CB /* nearbyInteractionManager.swift in Sources */,
 				7DBE4B812ADD4E1200940D9A /* NavigationListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,6 +543,10 @@
 				DEVELOPMENT_TEAM = MQZ2H364Y7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Medication-Scheduler-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "For nearby locating for beacons and notifications";
+				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "Used for locating nearby locations for medication reminding";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -542,6 +576,10 @@
 				DEVELOPMENT_TEAM = MQZ2H364Y7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Medication-Scheduler-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "For nearby locating for beacons and notifications";
+				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "Used for locating nearby locations for medication reminding";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
